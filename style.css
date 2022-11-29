@@ -1,0 +1,17 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container {
+    border: black ;
+    
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operations {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
