@@ -1,17 +1,123 @@
+:root {
+    --background: antiquewhite;
+    --font: #222;
+    --border: #344D67;
+    --screen: #F2E5E5;
+    --calculator: #2B3A55;
+    --btn: #E8C4C4;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+    --btn-red: #faa;
+    --btn-red-hover: #CE7777;
+    --btn-red-active: #d88;
+    --btn-blue: #ADE792;
+    --btn-blue-hover: #99e;
+    --btn-blue-active: #88d;
+  }
+html {
+    min-height: 100%;
+    position: relative;
+}
 body {
-    background-color: antiquewhite;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    /* margin-bottom: 800px; */
+}
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
 }
 .container {
-    border: black ;
-    
-    padding: 50px;
+    width: 400px;
+    border: 2px var(--border) solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--calculator);
+}
+.screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+.span {
+    grid-column: span 2;
+}
+.btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 20px;
+  }
+.btn:hover {
+    background-color: var(--btn-hover);
+  }
+.btn:active {
+    background-color: var(--btn-active);
+  }
+.clear-btn {
+    background-color: var(--btn-blue);
+  }
+.delete-btn {
+    background-color: var(--btn-red);
+  }
+
+.btn-red:hover {
+    background-color: var(--btn-red-hover);
+  }
+  
+.btn-red:active {
+    background-color: var(--btn-red-active);
+  }
+  
+.btn-blue {
+    background-color: var(--btn-blue);
+  }
+.btn-blue:hover {
+    background-color: var(--btn-blue-hover);
+  }
+.btn-blue:active {
+    background-color: var(--btn-blue-active);
+  }
+.fa-github {
+    color: var(--font);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.operations {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
+    gap: 15px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  

@@ -4,36 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-    <div class="container">
-        <div class="screen"></div>
-        <div class="buttons">
-            <div class="clearing">
-                <button class="clear-btn">clear</button>
-                <button class="delete-btn">delete</button>
+    <main class="main">
+
+        <div class="container">
+            <div class="screen">
+                <div class="last">0</div>
+                <div class="current">0</div>
             </div>
-            <div class="operations">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>÷</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>×</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
-                <button>.</button>
-                <button>0</button>
-                <button>=</button>
-                <button>+</button>
+            <div class="buttons">
+                    <button class="btn clear-btn span">clear</button>
+                    <button class="btn delete-btn span">delete</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">÷</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">×</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">-</button>
+                    <button class="btn">.</button>
+                    <button class="btn">0</button>
+                    <button class="btn">=</button>
+                    <button class="btn">+</button>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © </p>
+        <script>
+            document.write( new Date().getFullYear())
+        </script>
+        <p>Fettuta</p>
+        <a href="https://github.com/fatiha-dev" target="_blank">
+            <i class="fab fa-github"></i
+          ></a>
+          
+    </footer>
 </body>
 </html>
