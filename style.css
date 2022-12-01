@@ -2,15 +2,15 @@
     --background: antiquewhite;
     --font: #222;
     --border: #344D67;
-    --screen: #F2E5E5;
-    --calculator: #2B3A55;
-    --btn: #E8C4C4;
+    --screen: #EDE4E0;
+    --calculator: #665A48;
+    --btn: #9F8772;
     --btn-hover: #ddd;
     --btn-active: #ccc;
     --btn-red: #faa;
     --btn-red-hover: #CE7777;
     --btn-red-active: #d88;
-    --btn-blue: #ADE792;
+    --btn-blue: #C8DBBE;
     --btn-blue-hover: #99e;
     --btn-blue-active: #88d;
   }
@@ -42,16 +42,18 @@ button {
     margin-top: 50px;
 }
 .container {
-    width: 400px;
-    border: 2px var(--border) solid;
+    width: 300px;
+    /* border: 2px var(--border) solid; */
+    border: none;
     border-radius: 10px;
     padding: 20px;
     background-color: var(--calculator);
 }
 .screen {
     padding: 10px 20px;
-    border: 2px var(--border) solid;
-    border-radius: 5px;
+    /* border: 2px var(--border) solid; */
+    border: none;
+    border-radius: 16px;
     margin-bottom: 5px;
     background-color: var(--screen);
     text-align: right;
@@ -65,13 +67,18 @@ button {
 }
 .span {
     grid-column: span 2;
+    
 }
 .btn {
     padding: 20px;
-    border: 2px var(--border) solid;
-    border-radius: 5px;
+    /* border: 2px var(--border) solid; */
+    border:none;
+    border-radius: 60%;
     background-color: var(--btn);
     font-size: 20px;
+  }
+  .clear-btn,.delete-btn{
+    border-radius: 16px;
   }
 .btn:hover {
     background-color: var(--btn-hover);
